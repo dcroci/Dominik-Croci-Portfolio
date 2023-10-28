@@ -21,7 +21,7 @@ const FadeOnScroll = ({ children }) => {
     return () => {
       window.removeEventListener('scroll', onScroll);
     };
-  }, [elementTop]);
+  }, [elementTop, onScroll]);
 
   return (
     <motion.div
