@@ -2,26 +2,29 @@
 import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
-const FadeLeftOnScroll = ({ children }) => {
+const FadeLeftOnScroll = ({ children }: any) => {
   const controls = useAnimation();
-  const [elementTop, setElementTop] = useState(null);
-
-  const onScroll = () => {
-    const scrollY = window.scrollY;
-    if (scrollY > elementTop - window.innerHeight / 1.5) {
-      controls.start({ opacity: 1, x: 0, transition: { duration: 1 } });
-    }
-  };
+  const [elementTop, setElementTop] = useState<number | null>(null);
 
   useEffect(() => {
+    const onScroll = () => {
+      const scrollY = window.scrollY;
+      if (elementTop) {
+        if (scrollY > elementTop - window.innerHeight / 1.5) {
+          controls.start({ opacity: 1, x: 0, transition: { duration: 1 } });
+        }
+      }
+    };
     const element = document.getElementById('fade-in-on-scroll');
-    setElementTop(element.offsetTop);
+    if (element) {
+      setElementTop(element.offsetTop);
+    }
     window.addEventListener('scroll', onScroll);
 
     return () => {
       window.removeEventListener('scroll', onScroll);
     };
-  }, [elementTop, onScroll]);
+  }, [elementTop, controls]);
 
   return (
     <motion.div
