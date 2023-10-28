@@ -5,7 +5,7 @@ function ContactForm() {
     <section>
       <FadeOnScroll>
         <h2 className="col-span-full text-center text-3xl">
-          Let's get in touch
+          {`Let's get in touch`}
         </h2>
         <form className="flex flex-col max-w-lg mx-auto">
           <label htmlFor="name">Name:</label>
