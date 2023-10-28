@@ -1,3 +1,15 @@
+import IntroSection from './components/IntroSection';
+import TechStackSection from './components/TechStackSection';
+import ProjectsSection from './components/ProjectsSection';
+import ContactForm from './components/ContactForm';
+
 export default function Home() {
-  return <p>Home page</p>;
+  return (
+    <>
+      <IntroSection />
+      <TechStackSection />
+      <ProjectsSection />
+      <ContactForm />
+    </>
+  );
 }
