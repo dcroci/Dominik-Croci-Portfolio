@@ -1,24 +1,31 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import FadeLeftOnScroll from './FadeLeftOnScroll';
+import FadeOnScroll from './FadeOnScroll';
+import FadeRightOnScroll from './FadeRightOnScroll';
 import Project from './Project';
 function ProjectsSection() {
   return (
-    <section className="grid sm:grid-cols-1 md:grid-cols-2 ">
+    <section className="grid sm:grid-cols-1 md:grid-cols-2 min-h-screen container mx-auto px-6">
       <h2 className="col-span-full text-center text-6xl p-6">
-        Notable Projects
+        <FadeOnScroll> Notable Projects</FadeOnScroll>
       </h2>
-      <Project
-        title="Dev Talk"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum temporibus enim esse est possimus pariatur maxime saepe dolor veritatis. Quod repellat aliquid officiis totam quia velit vel aut illum?"
-        imgURL="dev-talk.png"
-        siteLink={'https://devtalk.tech/'}
-      />
-      <Project
-        title="Game Guesser"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum temporibus enim esse est possimus pariatur maxime saepe dolor veritatis. Quod repellat aliquid officiis totam quia velit vel aut illum?"
-        imgURL="game-guesser.png"
-        siteLink={'https://gameguesser.netlify.app/'}
-      />
+      <FadeLeftOnScroll>
+        <Project
+          title="Dev Talk"
+          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum temporibus enim esse est possimus pariatur maxime saepe dolor veritatis. Quod repellat aliquid officiis totam quia velit vel aut illum?"
+          imgURL="dev-talk.png"
+          siteLink={'https://devtalk.tech/'}
+        />
+      </FadeLeftOnScroll>
+      <FadeRightOnScroll>
+        <Project
+          title="Game Guesser"
+          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum temporibus enim esse est possimus pariatur maxime saepe dolor veritatis. Quod repellat aliquid officiis totam quia velit vel aut illum?"
+          imgURL="game-guesser.png"
+          siteLink={'https://gameguesser.netlify.app/'}
+        />
+      </FadeRightOnScroll>
       <div className="flex col-span-full text-center text-3xl items-center justify-center bg-gray-700 rounded w-2/4 mx-auto">
         <p className="col-span-full text-center ">
           <Link href={'/projects'}> See Full Portfolio</Link>

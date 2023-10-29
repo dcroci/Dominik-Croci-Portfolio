@@ -11,7 +11,7 @@ const FadeOnScroll = ({ children }: any) => {
       const scrollY = window.scrollY;
       if (elementTop) {
         if (scrollY > elementTop - window.innerHeight / 1.5) {
-          controls.start({ opacity: 1, y: 0, transition: { duration: 1 } });
+          controls.start({ opacity: 1, y: 0, transition: { duration: 1.5 } });
         }
       }
     };

@@ -2,7 +2,7 @@ import FadeOnScroll from './FadeOnScroll';
 
 function ContactForm() {
   return (
-    <section>
+    <section className="min-h-screen container mx-auto px-6">
       <FadeOnScroll>
         <h2 className="col-span-full text-center text-3xl">
           {`Let's get in touch`}

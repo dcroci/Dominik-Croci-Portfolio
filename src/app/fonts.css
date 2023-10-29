@@ -16,7 +16,8 @@ h2,
 h3 {
   font-family: 'GT Walsheim Pro Bold Regular';
 }
-p {
+p,
+label {
   font-family: 'GT Walsheim Pro Medium';
 }
 ul:first-child {

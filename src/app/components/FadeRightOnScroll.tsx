@@ -25,7 +25,7 @@ const FadeLeftOnScroll = ({ children }: any) => {
   return (
     <motion.div
       ref={setRef}
-      initial={{ opacity: 0, x: '-100vw' }} // start from the left outside of the view
+      initial={{ opacity: 0, x: '100vw' }}
       animate={controls}
     >
       {children}

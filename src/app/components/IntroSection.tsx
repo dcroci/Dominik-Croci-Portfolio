@@ -1,19 +1,22 @@
 import Image from 'next/image';
 function IntroSection() {
   return (
-    <section className="flex items-center flex-col p-12">
-      <div className="flex flex-row-reverse items-center md:flex-col">
+    <section className="flex items-center flex-col px-6 mt-20 min-h-screen container mx-auto">
+      <div className="flex flex-col sm:flex-row-reverse items-center md:flex-col">
         <Image
           src={'/headshot.png'}
           alt="Professional photo of me"
           width={'250'}
           height={'50'}
-          className="rounded-full"
+          className="sm:rounded-full"
         />
-        <h1 className="text-7xl p-6">{`Hey, I'm Dominik`}</h1>
+        <h1 className="text-7xl py-6 text-center">{`Hey, I'm Dominik`}</h1>
       </div>
-      <p className="text-4xl p-6 pt-0">
-        Developer of responsive, accessible, and engaging web applications
+      <p className="text-4xl py-6 text-center">
+        Developer of <span style={{ color: '#FFA500' }}>responsive</span>,
+        <span style={{ color: '#00ffff' }}> accessible</span>, and
+        <span style={{ color: '#1E90FF' }}> engaging </span>
+        web applications
       </p>
     </section>
   );
