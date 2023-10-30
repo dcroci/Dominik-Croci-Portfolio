@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "aos": "^2.3.4",
+    "emailjs": "^4.0.3",
     "framer-motion": "^10.16.4",
     "next": "14.0.0",
     "react": "^18",
