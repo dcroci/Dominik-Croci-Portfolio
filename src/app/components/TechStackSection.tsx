@@ -1,21 +1,19 @@
-import Image from 'next/image';
+import React from 'react';
 import StackIcon from './StackIcon';
-import FadeLeftOnScroll from './FadeLeftOnScroll';
-import FadeOnScroll from './FadeOnScroll';
+import FadeLeftOnScroll from './FadeLeftOnScroll'; // Make sure to use the updated FadeLeftOnScroll
+
 function TechStackSection() {
   return (
     <section className="flex flex-col items-center px-6 min-h-screen container mx-auto snap justify-center">
       <h2 className="text-5xl px-6 pb-12 text-center">
-        <FadeOnScroll>Check out my Tech Stack</FadeOnScroll>{' '}
+        Check out my Tech Stack
       </h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-3 w-full gap-x-8">
         <div
           id="frontend"
           className="border-gray-300 border-b md:border-r md:border-b-0 pb-6"
         >
-          <h3 className="text-center text-4xl pb-6">
-            <FadeOnScroll>Frontend</FadeOnScroll>
-          </h3>
+          <h3 className="text-center text-4xl pb-6">Frontend</h3>
           <FadeLeftOnScroll>
             <div className="grid grid-cols-2 gap-8 grid-rows-3 w-full">
               <StackIcon imgURL="react-icon.png" />
@@ -32,9 +30,7 @@ function TechStackSection() {
           id="styling"
           className="border-gray-300 border-b md:border-r md:border-b-0 pb-6"
         >
-          <h3 className="text-center text-4xl pb-6">
-            <FadeOnScroll>Styling</FadeOnScroll>
-          </h3>
+          <h3 className="text-center text-4xl pb-6">Styling</h3>
           <FadeLeftOnScroll>
             <div className="grid grid-cols-2 gap-8 grid-rows-3 w-full">
               <StackIcon imgURL="css-icon.png" />
@@ -49,9 +45,7 @@ function TechStackSection() {
           id="backend"
           className="border-gray-300 border-b md:border-r md:border-b-0 pb-6"
         >
-          <h3 className="text-center text-4xl pb-6">
-            <FadeOnScroll>Backend</FadeOnScroll>
-          </h3>
+          <h3 className="text-center text-4xl pb-6">Backend</h3>
           <FadeLeftOnScroll>
             <div className="grid grid-cols-2 gap-8 grid-rows-3 w-full">
               <StackIcon imgURL="node-icon.png" />
