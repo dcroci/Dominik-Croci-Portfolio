@@ -33,6 +33,11 @@ html {
     scroll-snap-type: none;
   }
 }
+@media (max-width: 495px) {
+  .intro {
+    margin-top: 20px;
+  }
+}
 
 body {
   color: rgb(var(--foreground-rgb));
