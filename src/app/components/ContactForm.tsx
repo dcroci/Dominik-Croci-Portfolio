@@ -1,20 +1,81 @@
+'use client';
 import FadeOnScroll from './FadeOnScroll';
+import emailjs from '@emailjs/browser';
 
 function ContactForm() {
+  const fields = [
+    {
+      id: 'name',
+      label: 'Name',
+      name: 'from_name',
+      autoFocus: true,
+      multiline: false,
+    },
+    {
+      id: 'email',
+      label: 'Email Address',
+      name: 'user_email',
+      autoFocus: false,
+      multiline: false,
+    },
+    {
+      id: 'message',
+      label: 'Message',
+      name: 'message',
+      autoFocus: false,
+      multiline: true,
+    },
+  ];
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_viiezjj',
+        'template_80wtb1h',
+        e.target,
+        'bsET1a5yB0esjGNfS'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    alert('Email sent!');
+  }
   return (
-    <section className="min-h-screen container mx-auto px-6 snap flex items-center justify-center">
+    <section className="min-h-screen container mx-auto px-6 snap flex items-center justify-center w-full">
       <FadeOnScroll>
-        <h2 className="col-span-full text-center text-3xl">
+        <h2 className="col-span-full text-center text-6xl p-6">
           {`Let's get in touch`}
         </h2>
-        <form className="flex flex-col max-w-lg mx-auto">
-          <label htmlFor="name">Name:</label>
-          <input type="text" />
-          <label htmlFor="email">Email:</label>
-          <input type="email" />
+        <form
+          className="flex flex-col w-full mx-auto text-2xl p-6 text-black"
+          onSubmit={sendEmail}
+        >
+          <label htmlFor="from_name">Name:</label>
+          <input
+            type="text"
+            className="rounded text-xl indent-2 mb-4 p-2"
+            name="from_name"
+          />
+          <label htmlFor="user_email">Email:</label>
+          <input
+            type="email"
+            className="rounded text-xl indent-2 mb-4 p-2"
+            name="user_email"
+          />
           <label htmlFor="message">Message:</label>
-          <textarea name="message" cols={30} rows={10}></textarea>
-          <button className="flex mx-auto">
+          <textarea
+            name="message"
+            cols={30}
+            rows={10}
+            className="rounded text-xl indent-2 p-2"
+          ></textarea>
+          <button className="flex mx-auto bg-blue-500 text-white rounded px-6 py-2 mt-6 items-center justify-center gap-4 hover:bg-blue-600 hover:-translate-y-1">
             Send message
             <svg
               xmlns="http://www.w3.org/2000/svg"

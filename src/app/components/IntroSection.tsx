@@ -18,13 +18,13 @@ function IntroSection() {
           </div>
         </ul>
       </nav>
-      <div className="flex flex-col sm:flex-row-reverse items-center md:flex-col">
+      <div className="flex flex-col sm:flex-row-reverse items-center md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse gap-8">
         <Image
           src={'/headshot.png'}
           alt="Professional photo of me"
           width={'250'}
           height={'50'}
-          className="sm:rounded-full"
+          className="rounded-full"
         />
         <h1 className="text-7xl py-6 text-center">{`Hey, I'm Dominik`}</h1>
       </div>

@@ -6,7 +6,7 @@ function StackIcon({ imgURL }: any) {
       alt={imgURL}
       width={'70'}
       height={'70'}
-      className="mx-auto cursor-pointer hover:-translate-y-1 hover:scroll-smooth hover:ease-in-out hover:shadow-xl "
+      className="mx-auto cursor-pointer hover:-translate-y-1 hover:scroll-smooth hover:ease-in-out  "
     ></Image>
   );
 }
