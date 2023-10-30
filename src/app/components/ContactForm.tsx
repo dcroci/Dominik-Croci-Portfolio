@@ -1,6 +1,6 @@
 'use client';
 import FadeOnScroll from './FadeOnScroll';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 function ContactForm() {
   const fields = [
