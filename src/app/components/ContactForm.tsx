@@ -1,6 +1,6 @@
 'use client';
 import FadeOnScroll from './FadeOnScroll';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 
 function ContactForm() {
   const fields = [
@@ -27,7 +27,7 @@ function ContactForm() {
     },
   ];
 
-  function sendEmail(e) {
+  function sendEmail(e: any) {
     e.preventDefault();
     emailjs
       .sendForm(
