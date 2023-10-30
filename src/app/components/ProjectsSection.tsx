@@ -6,7 +6,7 @@ import FadeRightOnScroll from './FadeRightOnScroll';
 import Project from './Project';
 function ProjectsSection() {
   return (
-    <section className="grid sm:grid-cols-1 md:grid-cols-2 min-h-screen container mx-auto px-6">
+    <section className="grid sm:grid-cols-1 md:grid-cols-2 min-h-screen container mx-auto px-6 snap justify-center">
       <h2 className="col-span-full text-center text-6xl p-6">
         <FadeOnScroll> Notable Projects</FadeOnScroll>
       </h2>

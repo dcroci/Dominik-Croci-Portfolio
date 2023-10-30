@@ -1,7 +1,23 @@
 import Image from 'next/image';
+import Link from 'next/link';
 function IntroSection() {
   return (
-    <section className="flex items-center flex-col px-6 mt-20 min-h-screen container mx-auto">
+    <section className="flex items-center flex-col px-6 mt-20 min-h-screen container mx-auto snap justify-center relative">
+      <nav className="p-6 w-full absolute top-0">
+        <ul className="flex justify-between text-3xl">
+          <li>
+            <Link href={'/'}> Dominik Croci</Link>
+          </li>
+          <div className="flex gap-6">
+            <li>
+              <Link href={'/blog'}> Blog</Link>
+            </li>
+            <li>
+              <Link href={'/projects'}> Projects</Link>
+            </li>
+          </div>
+        </ul>
+      </nav>
       <div className="flex flex-col sm:flex-row-reverse items-center md:flex-col">
         <Image
           src={'/headshot.png'}

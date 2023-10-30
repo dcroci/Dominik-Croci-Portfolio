@@ -19,24 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="gradient">
-          <nav className="p-6">
-            <ul className="flex justify-between text-3xl">
-              <li>
-                <Link href={'/'}> Dominik Croci</Link>
-              </li>
-              <div className="flex gap-6">
-                <li>
-                  <Link href={'/blog'}> Blog</Link>
-                </li>
-                <li>
-                  <Link href={'/projects'}> Projects</Link>
-                </li>
-              </div>
-            </ul>
-          </nav>
-          {children}
-        </div>
+        <div className="gradient">{children}</div>
       </body>
     </html>
   );
