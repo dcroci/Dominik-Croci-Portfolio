@@ -21,6 +21,14 @@ html {
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
+@media (max-width: 640px) {
+  .snap {
+    scroll-snap-align: start;
+  }
+  html {
+    scroll-snap-type: y proximity;
+  }
+}
 
 @keyframes gradient-animation {
   0% {
