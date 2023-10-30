@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 function IntroSection() {
   return (
-    <section className="flex items-center flex-col px-6 mt-20 min-h-screen container mx-auto snap justify-center relative">
+    <section className="flex items-center flex-col px-6 min-h-screen container mx-auto snap justify-center relative">
       <nav className="p-6 w-full absolute top-0">
         <ul className="flex justify-between text-3xl">
           <li>

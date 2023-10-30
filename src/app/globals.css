@@ -23,10 +23,11 @@ html {
 }
 @media (max-width: 640px) {
   .snap {
-    scroll-snap-align: start;
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
   }
   html {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
   }
 }
 
