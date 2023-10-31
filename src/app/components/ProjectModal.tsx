@@ -51,7 +51,7 @@ function ProjectModal({
       </p>
       <ul className="flex col-span-2">
         {techs.map((techz): any => {
-          return <li>{techz}, </li>;
+          return <li key={techz}>{techz}, </li>;
         })}
       </ul>
     </div>
