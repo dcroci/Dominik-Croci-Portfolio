@@ -18,7 +18,7 @@ export default function RootLayout({
   // const pathname = usePathname(); WILL NEED THIS LATER TO SHOW ACTIVE PAGE
   return (
     <html lang="en">
-      <body>
+      <body className="text-white">
         <div className="gradient">{children}</div>
       </body>
     </html>

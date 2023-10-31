@@ -20,7 +20,8 @@ label {
 p,
 input,
 button,
-textarea {
+textarea,
+div ul li {
   font-family: 'GT Walsheim Pro Medium';
 }
 ul:first-child {

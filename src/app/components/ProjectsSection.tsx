@@ -6,14 +6,14 @@ import FadeRightOnScroll from './FadeRightOnScroll';
 import Project from './Project';
 function ProjectsSection() {
   return (
-    <section className="grid sm:grid-cols-1 md:grid-cols-2 min-h-screen container mx-auto px-6 snap justify-center">
-      <h2 className="col-span-full text-center text-6xl p-6">
-        <FadeOnScroll> Notable Projects</FadeOnScroll>
+    <section className="grid sm:grid-cols-1 md:grid-cols-2 min-h-screen gap-8 container mx-auto px-6 snap justify-center ">
+      <h2 className="col-span-full text-center text-6xl p-6 pb-0">
+        Notable Projects
       </h2>
       <FadeLeftOnScroll>
         <Project
           title="Dev Talk"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum temporibus enim esse est possimus pariatur maxime saepe dolor veritatis. Quod repellat aliquid officiis totam quia velit vel aut illum?"
+          desc="A dynamic single-page application where developers connect, share, and engage in spaces dedicated to various programming languages. "
           imgURL="dev-talk.png"
           siteLink={'https://devtalk.tech/'}
         />
@@ -21,7 +21,7 @@ function ProjectsSection() {
       <FadeRightOnScroll>
         <Project
           title="Game Guesser"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum temporibus enim esse est possimus pariatur maxime saepe dolor veritatis. Quod repellat aliquid officiis totam quia velit vel aut illum?"
+          desc="An interactive single-page web game where players engage in guessing video game titles and imagery, testing their knowledge of various video games in a fun and engaging way."
           imgURL="game-guesser.png"
           siteLink={'https://gameguesser.netlify.app/'}
         />

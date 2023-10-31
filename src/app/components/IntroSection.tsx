@@ -29,9 +29,9 @@ function IntroSection() {
         <h1 className="text-7xl py-6 text-center">{`Hey, I'm Dominik`}</h1>
       </div>
       <p className="text-4xl py-6 text-center">
-        Developer of <span style={{ color: '#FFA500' }}>responsive</span>,
+        Developer of <span style={{ color: '#f39237' }}>responsive</span>,
         <span style={{ color: '#00ffff' }}> accessible</span>, and
-        <span style={{ color: '#1E90FF' }}> engaging </span>
+        <span style={{ color: '#70e000' }}> engaging </span>
         web applications
       </p>
     </section>
