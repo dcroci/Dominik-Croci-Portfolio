@@ -27,6 +27,7 @@ const FadeLeftOnScroll = ({ children }: any) => {
       ref={ref}
       initial={{ opacity: 0, x: '100vw' }}
       animate={controls}
+      className="overflow-x-hidden"
     >
       {children}
     </motion.div>
