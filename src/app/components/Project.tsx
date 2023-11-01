@@ -14,6 +14,7 @@ function Project({
   mockup2,
   techs,
   gitLink,
+  hasTwoMockups,
 }: any) {
   const [showModal, setShowModal] = useState(false);
   return (
@@ -30,6 +31,7 @@ function Project({
             mockup1={mockup1}
             mockup2={mockup2}
             techs={techs}
+            hasTwoMockups={hasTwoMockups}
           />
         </FadeOnScroll>
       ) : (

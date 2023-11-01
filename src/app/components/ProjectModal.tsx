@@ -11,6 +11,7 @@ function ProjectModal({
   mockup1,
   mockup2,
   techs,
+  hasTwoMockups,
 }: any) {
   return (
     <div
@@ -40,14 +41,18 @@ function ProjectModal({
         id="mockups"
       />
       <p className=" mx-auto w-full  text-center col-span-2">Mockup 1</p>
-      <Image
-        src={`/${mockup2}`}
-        alt={title}
-        width={'400'}
-        height={'200'}
-        className="col-span-2 mx-auto"
-      />
-      <p className=" mx-auto w-full text-center col-span-2">Mockup 2</p>
+      {hasTwoMockups ? (
+        <>
+          <Image
+            src={`/${mockup2}`}
+            alt={title}
+            width={'400'}
+            height={'200'}
+            className="col-span-2 mx-auto"
+          />
+          <p className=" mx-auto w-full text-center col-span-2">Mockup 2</p>
+        </>
+      ) : null}
       <p className="bg-blue-500 col-start-2 mr-auto w-fit py-1 px-4 rounded hover:bg-blue-600 flex items-center justify-center">
         Technologies
       </p>
