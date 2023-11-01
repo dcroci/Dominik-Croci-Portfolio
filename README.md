@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>Welcome To My Developer Portfolio Website! 🚀</h1>
+    <p>Hello and welcome! Thank you for visiting my portfolio. I'm Dominik Croci, a passionate web developer specialized in creating dynamic and responsive websites. Visit <a href="https://www.dominikcroci.com" target="_blank">www.dominikcroci.com</a> and check out some of the awesome projects I've worked on!</p>
 
-## Getting Started
+  <h2>About Me 🧑‍💻</h2>
+    <p>I'm Dominik, a web developer with a passion for creating incredible web experiences. With a foundation in HTML, CSS, and JavaScript, I have evolved my skill set to excel in modern web technologies like React, NextJS, and Tailwind CSS. My pursuit of coding knowledge and design elegance pushes me to deliver websites that are not only visually stunning but also exceptionally functional as well. </p>
 
-First, run the development server:
+  <h2>Technologies and Skills 🛠️</h2>
+    <ul>
+        <li><strong>Languages:</strong> HTML, JavaScript, TypeScript</li>
+        <li><strong>Frameworks/Libraries:</strong> React, NextJS</li>
+        <li><strong>Styling:</strong> CSS, Tailwind CSS, Material UI, Bootstrap</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+        <li><strong>Backend:</strong> Node, Express, SocketIO</li>
+    </ul>
+    <p>Each project in my portfolio is a testament to my dedication to code quality, user experience, and responsive design. By adopting a mobile-first approach and emphasizing web performance, I ensure that every creation leaves a lasting impression.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <h2>Explore My Portfolio 🌐</h2>
+    <p>Visit my portfolio to see a variety of projects that are a testament of my love for creating modern, exciting, and beautiful websites.</p>
+    <p><a href="https://www.dominikcroci.com" target="_blank">Dominik Croci's Portfolio</a></p>
