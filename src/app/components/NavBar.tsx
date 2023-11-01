@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="p-6 w-full absolute top-0">
+    <nav className="p-6 w-full absolute sm:initial top-0">
       <div className="flex justify-between items-center text-3xl">
         <p>
           <Link href="/">Dominik Croci</Link>
