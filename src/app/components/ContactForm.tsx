@@ -62,6 +62,7 @@ function ContactForm() {
           type="text"
           className="rounded text-xl indent-2 mb-4 p-2"
           name="from_name"
+          aria-label="Name"
         />
         <label htmlFor="user_email" className="text-white">
           Email:
@@ -70,6 +71,7 @@ function ContactForm() {
           type="email"
           className="rounded text-xl indent-2 mb-4 p-2"
           name="user_email"
+          aria-label="Email"
         />
         <label htmlFor="message" className="text-white">
           Message:
@@ -79,6 +81,7 @@ function ContactForm() {
           cols={30}
           rows={10}
           className="rounded text-xl indent-2 p-2"
+          aria-label="Message"
         ></textarea>
         <button className="flex mx-auto bg-blue-500 text-white rounded px-6 py-2 mt-6 items-center justify-center gap-4 hover:bg-blue-600 hover:-translate-y-1">
           Send message
