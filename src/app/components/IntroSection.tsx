@@ -4,19 +4,19 @@ function IntroSection() {
   return (
     <section className="flex items-center flex-col px-6 min-h-screen container mx-auto snap justify-center relative ">
       <nav className="p-6 w-full absolute top-0">
-        <ul className="flex justify-between text-3xl">
-          <li>
+        <div className="flex justify-between text-3xl">
+          <p>
             <Link href={'/'}> Dominik Croci</Link>
-          </li>
+          </p>
           <div className="flex gap-6">
-            <li>
+            <p>
               <Link href={'/blog'}> Blog</Link>
-            </li>
-            <li>
+            </p>
+            <p>
               <Link href={'/projects'}> Projects</Link>
-            </li>
+            </p>
           </div>
-        </ul>
+        </div>
       </nav>
       <div className="flex flex-col sm:flex-col items-center md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse gap-8 intro">
         <Image

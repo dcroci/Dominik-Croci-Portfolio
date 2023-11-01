@@ -48,6 +48,7 @@ function Project({
             <h3 className="text-4xl py-6 underline">{title}</h3>
             <a href={siteLink} target="_blank">
               <svg
+                aria-label="Visit the live site here"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -64,6 +65,7 @@ function Project({
             </a>
             <a href={gitLink} target="_blank">
               <svg
+                aria-label="Visit the GitHub repository here"
                 className="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
