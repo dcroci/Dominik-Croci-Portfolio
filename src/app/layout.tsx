@@ -27,8 +27,8 @@ export default function RootLayout({
   // const pathname = usePathname(); WILL NEED THIS LATER TO SHOW ACTIVE PAGE
   return (
     <html lang="en">
-      <body className="text-white container">
-        <div className="gradient mx-auto">{children}</div>
+      <body className="text-white container w-full">
+        <div className="gradient mx-auto w-full">{children}</div>
       </body>
     </html>
   );
