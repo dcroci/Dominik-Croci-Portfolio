@@ -9,6 +9,15 @@ import './fonts.css';
 // import { usePathname } from 'next/navigation';WILL NEED THIS LATER TO SHOW ACTIVE PAGE
 
 //imports end
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Dominik Croci | Portfolio',
+  },
+  authors: [{ name: 'Dominik Croci' }],
+  creator: 'Dominik Croci',
+  description:
+    'Dominik Croci Web Developer Portfolio, powered by NextJS and TailwindCSS',
+};
 
 export default function RootLayout({
   children,
