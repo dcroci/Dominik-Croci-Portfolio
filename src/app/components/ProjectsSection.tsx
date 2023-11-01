@@ -16,6 +16,12 @@ function ProjectsSection() {
           desc="A dynamic single-page application where developers connect, share, and engage in spaces dedicated to various programming languages. "
           imgURL="dev-talk.png"
           siteLink={'https://devtalk.tech/'}
+          mockup1="mockups/dt-mockup.png"
+          mockup2="mockups/dt-tablet.png"
+          techs={
+            'React, JSX, React Router, NodeJS, Express, SocketIO, Material UI, Firebase'
+          }
+          gitLink="https://github.com/dcroci/devtalk-chatapp"
         />
       </FadeLeftOnScroll>
       <FadeRightOnScroll>
@@ -24,6 +30,10 @@ function ProjectsSection() {
           desc="An interactive single-page web game where players engage in guessing video game titles and imagery, testing their knowledge of various video games in a fun and engaging way."
           imgURL="game-guesser.png"
           siteLink={'https://gameguesser.netlify.app/'}
+          mockup1="mockups/gg-mockup.png"
+          mockup2="mockups/gg-tablet.png"
+          techs="React, JSX, RAWG API"
+          gitLink="https://github.com/dcroci/react-game-guesser"
         />
       </FadeRightOnScroll>
       <div className="flex col-span-full text-center text-3xl items-center justify-center bg-gray-700 rounded w-2/4 mx-auto">
