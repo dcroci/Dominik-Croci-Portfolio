@@ -1,4 +1,6 @@
+import Navbar from '../components/NavBar';
+
 function Page() {
-  return <h1>{`I've written some things`}</h1>;
+  return <Navbar />;
 }
 export default Page;
