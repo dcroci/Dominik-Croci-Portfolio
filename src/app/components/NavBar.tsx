@@ -12,9 +12,9 @@ const Navbar = () => {
           <Link href="/">Dominik Croci</Link>
         </p>
         <div className="hidden md:flex gap-6 ">
-          <p className="text-right">
+          {/* <p className="text-right">
             <Link href="/blog">Blog</Link>
-          </p>
+          </p> */}
           <p>
             <Link href="/projects">Projects</Link>
           </p>
@@ -49,11 +49,11 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden flex flex-col gap-6 text-right pb-20 ">
-          <p>
+          {/* <p>
             <Link href="/blog" className="hover:underline">
               Blog
             </Link>
-          </p>
+          </p> */}
           <p>
             <Link href="/projects" className="hover:underline">
               Projects

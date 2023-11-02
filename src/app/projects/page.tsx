@@ -3,9 +3,9 @@ import Navbar from '../components/NavBar';
 import Project from '../components/Project';
 function Page() {
   return (
-    <section className="flex items-center flex-col px-6 min-h-screen container mx-auto snap justify-center relative ">
+    <section className="flex flex-col sm:flex-col items-center md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse gap-8">
       <Navbar />
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-36 container mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-36 container mx-auto w-full">
         <h1 className="text-5xl col-span-full text-center p-6">
           Here are some of my projects!
         </h1>

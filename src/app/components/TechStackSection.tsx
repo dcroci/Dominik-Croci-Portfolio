@@ -1,10 +1,13 @@
 import React from 'react';
 import StackIcon from './StackIcon';
-import FadeLeftOnScroll from './FadeLeftOnScroll'; // Make sure to use the updated FadeLeftOnScroll
+import FadeLeftOnScroll from './FadeLeftOnScroll';
+import styles from '../ScrollSnap.module.css';
 
 function TechStackSection() {
   return (
-    <section className="flex flex-col items-center px-6 min-h-screen container mx-auto snap justify-center">
+    <section
+      className={`flex flex-col items-center px-6 min-h-screen container mx-auto snap justify-center`}
+    >
       <h2 className="text-5xl px-6 pb-12 text-center">
         Check out my Tech Stack
       </h2>

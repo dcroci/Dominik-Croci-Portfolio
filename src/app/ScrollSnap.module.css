@@ -1,0 +1,16 @@
+/* .snap {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+.snap html {
+  scroll-snap-type: y mandatory;
+}
+@media (max-width: 768px) {
+  .snap {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+  .snap html {
+    scroll-snap-type: none;
+  }
+} */

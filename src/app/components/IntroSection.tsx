@@ -1,9 +1,11 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Navbar from './NavBar';
+import styles from '../ScrollSnap.module.css';
 function IntroSection() {
   return (
-    <section className="flex items-center flex-col px-6 min-h-screen container mx-auto snap justify-center relative ">
+    <section
+      className={`flex items-center flex-col px-6 min-h-screen container mx-auto snap justify-center relative `}
+    >
       <Navbar></Navbar>
       <div className="flex flex-col sm:flex-col items-center md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse gap-8 intro">
         <Image

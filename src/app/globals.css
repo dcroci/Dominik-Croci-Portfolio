@@ -15,7 +15,7 @@
   background-size: 180% 180%;
   animation: gradient-animation 6s ease infinite;
 }
-html {
+.snap-container {
   scroll-snap-type: y mandatory;
 }
 .snap {

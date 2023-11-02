@@ -35,8 +35,8 @@ function Project({
           />
         </FadeOnScroll>
       ) : (
-        <div className="flex flex-col items-center p-6 max-w-lg mx-auto ">
-          <div className="relative">
+        <div className="flex flex-col items-center p-6 max-w-lg mx-auto w-full container">
+          <div className="relative w-full">
             <ToggleProjectModalButton setShowModal={setShowModal} />
             <Image
               src={`/${imgURL}`}

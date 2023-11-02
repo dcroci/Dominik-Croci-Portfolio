@@ -5,11 +5,11 @@ import ContactForm from './components/ContactForm';
 
 export default function Home() {
   return (
-    <>
+    <div className="snap-container">
       <IntroSection />
       <TechStackSection />
       <ProjectsSection />
       <ContactForm />
-    </>
+    </div>
   );
 }
