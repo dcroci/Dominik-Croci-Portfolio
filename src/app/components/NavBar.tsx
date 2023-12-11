@@ -13,7 +13,7 @@ const Navbar = () => {
         </p>
         <div className="hidden md:flex gap-6 ">
           {/* <p className="text-right">
-            <Link href="/blog">Blog</Link>
+            <a href="https://www.dominikcroci.com">Blog</a>
           </p> */}
           <p>
             <Link href="/projects">Projects</Link>

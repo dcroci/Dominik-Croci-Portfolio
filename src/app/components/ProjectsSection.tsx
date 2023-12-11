@@ -13,7 +13,7 @@ function ProjectsSection() {
       <FadeLeftOnScroll>
         <Project
           title="Dev Talk"
-          desc="A dynamic single-page application where developers connect, share, and engage in spaces dedicated to various programming languages. "
+          desc="A dynamic single-page application where developers connect, share, and engage in spaces dedicated to various programming languages "
           imgURL="dev-talk.png"
           siteLink={'https://devtalk.tech/'}
           mockup1="mockups/dt-mockup.png"
@@ -27,7 +27,7 @@ function ProjectsSection() {
       <FadeRightOnScroll>
         <Project
           title="Game Guesser"
-          desc="An interactive single-page web game where players engage in guessing video game titles and imagery, testing their knowledge of various video games in a fun and engaging way."
+          desc="An interactive single-page web game where players engage in guessing video game titles and imagery, testing their knowledge of various video games in a fun and engaging way"
           imgURL="game-guesser.png"
           siteLink={'https://gameguesser.netlify.app/'}
           mockup1="mockups/gg-mockup.png"
@@ -36,8 +36,8 @@ function ProjectsSection() {
           gitLink="https://github.com/dcroci/react-game-guesser"
         />
       </FadeRightOnScroll>
-      <div className="flex col-span-full text-center text-3xl items-center justify-center bg-gray-700 rounded w-2/4 mx-auto">
-        <p className="col-span-full text-center ">
+      <div className="flex col-span-full text-center text-3xl items-center justify-center bg-blue-500 rounded w-2/4 mx-auto">
+        <p className="col-span-full text-center p-6 ">
           <Link href={'/projects'}> See Full Portfolio</Link>
         </p>
         <svg

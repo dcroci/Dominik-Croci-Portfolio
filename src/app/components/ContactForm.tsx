@@ -83,7 +83,7 @@ function ContactForm() {
           className="rounded text-xl indent-2 p-2"
           aria-label="Message"
         ></textarea>
-        <button className="flex mx-auto bg-blue-500 text-white rounded px-6 py-2 mt-6 items-center justify-center gap-4 hover:bg-blue-600 hover:-translate-y-1">
+        <button className="flex mx-auto text-3xl bg-blue-500 text-white rounded p-6 mt-6 items-center justify-center gap-4 hover:bg-blue-600 hover:-translate-y-1">
           Send message
           <svg
             xmlns="http://www.w3.org/2000/svg"
