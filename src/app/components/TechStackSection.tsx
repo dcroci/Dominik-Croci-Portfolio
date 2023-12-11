@@ -19,12 +19,15 @@ function TechStackSection() {
           <h3 className="text-center text-4xl pb-6">Frontend</h3>
           <FadeLeftOnScroll>
             <div className="grid grid-cols-2 gap-8 grid-rows-3 w-full">
-              <StackIcon imgURL="react-icon.png" />
-              <StackIcon imgURL="js-icon.png" />
-              <StackIcon imgURL="ts-icon.png" />
-              <StackIcon imgURL="nextjs-icon.png" />
-              <StackIcon imgURL="reactrouter-icon.jpg" />
-              <StackIcon imgURL="html-icon.png" />
+              <StackIcon imgURL="react-icon.png" stackName={'React'} />
+              <StackIcon imgURL="js-icon.png" stackName={'JavaScript'} />
+              <StackIcon imgURL="ts-icon.png" stackName={'TypeScript'} />
+              <StackIcon imgURL="nextjs-icon.png" stackName={'NextJS'} />
+              <StackIcon
+                imgURL="reactrouter-icon.jpg"
+                stackName={'React Router'}
+              />
+              <StackIcon imgURL="html-icon.png" stackName={'HTML 5'} />
             </div>
           </FadeLeftOnScroll>
         </div>
@@ -36,10 +39,13 @@ function TechStackSection() {
           <h3 className="text-center text-4xl pb-6">Styling</h3>
           <FadeLeftOnScroll>
             <div className="grid grid-cols-2 gap-8 grid-rows-3 w-full">
-              <StackIcon imgURL="css-icon.png" />
-              <StackIcon imgURL="tailwind-icon.png" />
-              <StackIcon imgURL="mui-icon.png" />
-              <StackIcon imgURL="bootstrap-icon.png" />
+              <StackIcon imgURL="css-icon.png" stackName={'CSS 3'} />
+              <StackIcon
+                imgURL="tailwind-icon.png"
+                stackName={'Tailwind CSS'}
+              />
+              <StackIcon imgURL="mui-icon.png" stackName={'Material UI'} />
+              <StackIcon imgURL="bootstrap-icon.png" stackName={'Bootstrap'} />
             </div>
           </FadeLeftOnScroll>
         </div>
@@ -51,9 +57,11 @@ function TechStackSection() {
           <h3 className="text-center text-4xl pb-6">Backend</h3>
           <FadeLeftOnScroll>
             <div className="grid grid-cols-2 gap-8 grid-rows-3 w-full">
-              <StackIcon imgURL="node-icon.png" />
-              <StackIcon imgURL="express-icon.png" />
-              <StackIcon imgURL="socketio-icon.png" />
+              <StackIcon imgURL="node-icon.png" stackName={'Node JS'} />
+              <StackIcon imgURL="express-icon.png" stackName={'Express'} />
+              <StackIcon imgURL="socketio-icon.png" stackName={'SocketIO'} />
+              <StackIcon imgURL="mongoose-icon.png" stackName={'Mongoose'} />
+              <StackIcon imgURL="mongodb-icon.svg" stackName={'MongoDB'} />
             </div>
           </FadeLeftOnScroll>
         </div>
