@@ -3,25 +3,26 @@ import Navbar from '../components/NavBar';
 import Project from '../components/Project';
 function Page() {
   return (
-    <section className="flex flex-col sm:flex-col items-center md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse gap-8">
+    <section className="flex flex-col sm:flex-col items-center md:flex-row-reverse lg:flex-col xl:flex-col gap-8 container mx-auto">
       <Navbar />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-36 container mx-auto w-full">
         <h1 className="text-5xl col-span-full text-center p-6">
           Here are some of my projects!
         </h1>
         <Project
-          title="Dev Talk"
-          desc="A dynamic single-page application where developers connect, share, and engage in spaces dedicated to various programming languages "
-          imgURL="dev-talk.png"
-          siteLink={'https://devtalk.tech/'}
-          mockup1="mockups/dt-mockup.png"
-          mockup2="mockups/dt-tablet.png"
+          title="Personal Blog"
+          desc="A full-stack web application where I post articles about exciting tech, my goals and achievements, and other code-related ideas"
+          imgURL="blog.png"
+          siteLink={'https://dominik-croci-blog.netlify.app/'}
+          mockup1="mockups/blog-mockup.png"
+          mockup2="mockups/blog-tablet.png"
           techs={
-            'React, JSX, JavaScript, React Router, NodeJS, Express, SocketIO, Material UI, Firebase'
+            'React, JSX, React Router, NodeJS, Express, Mongoose, MongoDB, Tailwind CSS'
           }
-          gitLink={'https://github.com/dcroci/devtalk-chatapp'}
+          gitLink="https://github.com/dcroci/devtalk-chatapp"
           hasTwoMockups={true}
         />
+
         <Project
           title="Game Guesser"
           desc="An interactive single-page web game where players engage in guessing video game titles and imagery, testing their knowledge of various video games in a fun and engaging way"
@@ -42,6 +43,19 @@ function Page() {
           mockup2="mockups/country-tablet.png"
           techs={'React, JSX, JavaScript, Tailwind CSS'}
           gitLink="https://github.com/dcroci/react-country-info"
+          hasTwoMockups={true}
+        />
+        <Project
+          title="Dev Talk"
+          desc="A dynamic single-page application where developers connect, share, and engage in spaces dedicated to various programming languages "
+          imgURL="dev-talk.png"
+          siteLink={'https://devtalk.tech/'}
+          mockup1="mockups/dt-mockup.png"
+          mockup2="mockups/dt-tablet.png"
+          techs={
+            'React, JSX, JavaScript, React Router, NodeJS, Express, SocketIO, Material UI, Firebase'
+          }
+          gitLink={'https://github.com/dcroci/devtalk-chatapp'}
           hasTwoMockups={true}
         />
         <Project

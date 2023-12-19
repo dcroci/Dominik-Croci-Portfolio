@@ -11,10 +11,10 @@ function TechStackSection() {
       <h2 className="text-5xl px-6 pb-12 text-center">
         Check out my Tech Stack
       </h2>
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 w-full gap-x-8">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 w-full gap-x-8 md:gap-x-0">
         <div
           id="frontend"
-          className="border-gray-300 border-b md:border-r md:border-b-0 pb-6"
+          className="border-gray-300 border-b md:border-r md:border-b-0 pb-6 border-l"
         >
           <h3 className="text-center text-4xl pb-6">Frontend</h3>
           <FadeLeftOnScroll>

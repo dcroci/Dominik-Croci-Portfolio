@@ -12,16 +12,17 @@ function ProjectsSection() {
       </h2>
       <FadeLeftOnScroll>
         <Project
-          title="Dev Talk"
-          desc="A dynamic single-page application where developers connect, share, and engage in spaces dedicated to various programming languages "
-          imgURL="dev-talk.png"
-          siteLink={'https://devtalk.tech/'}
-          mockup1="mockups/dt-mockup.png"
-          mockup2="mockups/dt-tablet.png"
+          title="Personal Blog"
+          desc="A full-stack web application where I post articles about exciting tech, my goals and achievements, and other code-related ideas"
+          imgURL="blog.png"
+          siteLink={'https://dominik-croci-blog.netlify.app/'}
+          mockup1="mockups/blog-mockup.png"
+          mockup2="mockups/blog-tablet.png"
           techs={
-            'React, JSX, React Router, NodeJS, Express, SocketIO, Material UI, Firebase'
+            'React, JSX, React Router, NodeJS, Express, Mongoose, MongoDB, Tailwind CSS'
           }
-          gitLink="https://github.com/dcroci/devtalk-chatapp"
+          gitLink="https://github.com/dcroci/blog-mern"
+          hasTwoMockups={true}
         />
       </FadeLeftOnScroll>
       <FadeRightOnScroll>
@@ -34,10 +35,11 @@ function ProjectsSection() {
           mockup2="mockups/gg-tablet.png"
           techs="React, JSX, RAWG API"
           gitLink="https://github.com/dcroci/react-game-guesser"
+          hasTwoMockups={true}
         />
       </FadeRightOnScroll>
-      <div className="flex col-span-full text-center text-3xl items-center justify-center bg-blue-500 rounded w-2/4 mx-auto">
-        <p className="col-span-full text-center p-6 ">
+      <div className="flex flex-col md:flex-row col-span-full text-center text-3xl items-center justify-center bg-blue-500 rounded w-2/4 mx-auto p-6">
+        <p className="col-span-full text-center pb-4 md:pb-0 md:pr-4">
           <Link href={'/projects'}> See Full Portfolio</Link>
         </p>
         <svg

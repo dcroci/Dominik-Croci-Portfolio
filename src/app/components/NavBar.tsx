@@ -7,14 +7,16 @@ const Navbar = () => {
 
   return (
     <nav className="p-6 w-full absolute sm:initial top-0">
-      <div className="flex justify-between items-center text-3xl">
+      <div className="flex justify-between items-center text-3xl container mx-auto px-6">
         <p>
           <Link href="/">Dominik Croci</Link>
         </p>
         <div className="hidden md:flex gap-6 ">
-          {/* <p className="text-right">
-            <a href="https://www.dominikcroci.com">Blog</a>
-          </p> */}
+          <p className="text-right">
+            <a href="https://dominik-croci-blog.netlify.app/" target="_blank">
+              Blog
+            </a>
+          </p>
           <p>
             <Link href="/projects">Projects</Link>
           </p>
@@ -48,14 +50,18 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden flex flex-col gap-6 text-right pb-20 ">
-          {/* <p>
-            <Link href="/blog" className="hover:underline">
-              Blog
-            </Link>
-          </p> */}
+        <div className="md:hidden flex flex-col gap-6 text-right pb-20 container mx-auto px-6">
           <p>
-            <Link href="/projects" className="hover:underline">
+            <a
+              href="https://dominik-croci-blog.netlify.app/"
+              target="_blank"
+              className="hover:underline text-2xl"
+            >
+              Blog
+            </a>
+          </p>
+          <p>
+            <Link href="/projects" className="hover:underline text-2xl">
               Projects
             </Link>
           </p>
