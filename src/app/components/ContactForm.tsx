@@ -1,8 +1,16 @@
 'use client';
+import { useState } from 'react';
 import FadeOnScroll from './FadeOnScroll';
 import emailjs from '@emailjs/browser';
 
 function ContactForm() {
+  const [nameValue, setNameValue] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [emailValue, setEmailValue] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [messageValue, setMessageValue] = useState('');
+  const [messageError, setMessageError] = useState('');
+
   const fields = [
     {
       id: 'name',
@@ -29,30 +37,46 @@ function ContactForm() {
 
   function sendEmail(e: any) {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        'service_viiezjj',
-        'template_80wtb1h',
-        e.target,
-        'bsET1a5yB0esjGNfS'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    alert('Email sent!');
+
+    const isNameValid = nameValue.trim() !== '';
+    const isEmailValid = emailValue.trim() !== '';
+    const isMessageValid = messageValue.trim() !== '';
+
+    setNameError(isNameValid ? '' : 'Name is invalid');
+    setEmailError(isEmailValid ? '' : 'Email is invalid');
+    setMessageError(isMessageValid ? '' : 'Message is invalid');
+
+    if (isNameValid && isEmailValid && isMessageValid) {
+      emailjs
+        .sendForm(
+          'service_viiezjj',
+          'template_80wtb1h',
+          e.target,
+          'bsET1a5yB0esjGNfS'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert('Email sent!');
+            // Reset the form state
+            setNameValue('');
+            setEmailValue('');
+            setMessageValue('');
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   }
+
   return (
     <section className="min-h-screen container mx-auto px-6 snap flex flex-col items-center justify-center w-full">
       <h2 className="col-span-full text-center text-6xl p-6">
         <FadeOnScroll>{`Let's get in touch`}</FadeOnScroll>
       </h2>
       <form
-        className="flex flex-col w-full mx-auto text-2xl p-6 text-black"
+        className="flex flex-col w-full mx-auto text-2xl p-6 text-black max-w-3xl"
         onSubmit={sendEmail}
       >
         <label htmlFor="from_name" className="text-white">
@@ -63,7 +87,14 @@ function ContactForm() {
           className="rounded text-xl indent-2 mb-4 p-2"
           name="from_name"
           aria-label="Name"
+          value={nameValue}
+          onChange={(e) => setNameValue(e.target.value)}
         />
+        {nameError && (
+          <p className="text-white font-bold w-fit p-4 bg-red-700 rounded-md mt-2 mb-4">
+            {nameError}
+          </p>
+        )}
         <label htmlFor="user_email" className="text-white">
           Email:
         </label>
@@ -72,7 +103,14 @@ function ContactForm() {
           className="rounded text-xl indent-2 mb-4 p-2"
           name="user_email"
           aria-label="Email"
+          value={emailValue}
+          onChange={(e) => setEmailValue(e.target.value)}
         />
+        {emailError && (
+          <p className="text-white font-bold w-fit p-4 bg-red-700 rounded-md mt-2 mb-4">
+            {emailError}
+          </p>
+        )}
         <label htmlFor="message" className="text-white">
           Message:
         </label>
@@ -82,7 +120,14 @@ function ContactForm() {
           rows={10}
           className="rounded text-xl indent-2 p-2"
           aria-label="Message"
+          value={messageValue}
+          onChange={(e) => setMessageValue(e.target.value)}
         ></textarea>
+        {messageError && (
+          <p className="text-white font-bold w-fit p-4 bg-red-700 rounded-md mt-2 mb-4">
+            {messageError}
+          </p>
+        )}
         <button className="flex mx-auto text-3xl bg-blue-500 text-white rounded p-6 mt-6 items-center justify-center gap-4 hover:bg-blue-600 hover:-translate-y-1">
           Send message
           <svg
