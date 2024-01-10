@@ -1,19 +1,21 @@
+'use client';
 import Image from 'next/image';
 import Navbar from './NavBar';
-import styles from '../ScrollSnap.module.css';
+import { useState } from 'react';
 function IntroSection() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section
       className={`flex items-center flex-col px-6 min-h-screen container mx-auto snap justify-center relative `}
     >
-      <Navbar></Navbar>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="flex flex-col sm:flex-col items-center md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse gap-8 intro">
         <Image
-          src={'/headshot.png'}
+          src={'/updated-headshot.jpg'}
           alt="Professional photo of me"
           width={'250'}
           height={'50'}
-          className="rounded-full"
+          className={`rounded-full ${isOpen && 'mt-16'}`}
         />
         <h1 className="text-7xl py-6 text-center">{`Hey, I'm Dominik`}</h1>
       </div>
