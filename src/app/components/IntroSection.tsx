@@ -15,7 +15,7 @@ function IntroSection() {
           alt="Professional photo of me"
           width={'250'}
           height={'50'}
-          className={`rounded-full ${isOpen && 'mt-16'}`}
+          className={`rounded-full mt-12 ${isOpen && 'mt-16'}`}
         />
         <h1 className="text-7xl py-6 text-center">{`Hey, I'm Dominik`}</h1>
       </div>
