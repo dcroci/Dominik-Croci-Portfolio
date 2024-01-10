@@ -1,8 +1,8 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
-const Navbar = ({ isOpen, setIsOpen }) => {
+const Navbar = ({ isOpen, setIsOpen }: any) => {
   return (
     <nav className="p-6 w-full absolute sm:initial top-0">
       <div className="flex justify-between items-center text-3xl container mx-auto px-6">
