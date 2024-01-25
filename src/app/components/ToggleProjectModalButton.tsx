@@ -7,7 +7,7 @@ function ToggleProjectModalButton({ setShowModal }: any) {
       strokeWidth="1.5"
       stroke="white"
       className="w-6 h-6 absolute top-0 right-0 cursor-pointer z-50 bg-black"
-      onClick={() => setShowModal((prevState: any) => !prevState)}
+      onClick={() => setShowModal((prevState: boolean) => !prevState)}
     >
       <path
         strokeLinecap="round"

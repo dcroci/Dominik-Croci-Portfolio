@@ -1,5 +1,11 @@
 import Image from 'next/image';
-function StackIcon({ imgURL, stackName }: any) {
+function StackIcon({
+  imgURL,
+  stackName,
+}: {
+  imgURL: string;
+  stackName: string;
+}) {
   return (
     <div className="flex flex-col items-center gap-2">
       <Image
