@@ -16,6 +16,7 @@ function IntroSection() {
           width={'250'}
           height={'50'}
           className={`rounded-full mt-12 ${isOpen && 'mt-16'}`}
+          priority={true}
         />
         <h1 className="text-7xl py-6 text-center">{`Hey, I'm Dominik`}</h1>
       </div>
