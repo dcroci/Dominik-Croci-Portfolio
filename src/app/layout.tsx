@@ -6,6 +6,8 @@ import type { Metadata } from 'next';
 import Link from '../../node_modules/next/link';
 import './globals.css';
 import './fonts.css';
+import { Providers } from './providers';
+import NavBar from './components/NavBar';
 // import { usePathname } from 'next/navigation';WILL NEED THIS LATER TO SHOW ACTIVE PAGE
 
 //imports end
@@ -28,7 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-hidden">
       <body className="text-white w-full">
-        <div className="gradient mx-auto w-full">{children}</div>
+        <div className="gradient mx-auto w-full">
+          <Providers>
+            <NavBar />
+            {children}
+          </Providers>
+        </div>
       </body>
     </html>
   );

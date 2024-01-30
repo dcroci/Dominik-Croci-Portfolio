@@ -4,8 +4,7 @@ import Project from '../components/Project';
 function Page() {
   return (
     <section className="flex flex-col sm:flex-col items-center md:flex-row-reverse lg:flex-col xl:flex-col gap-8 container mx-auto">
-      <Navbar />
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-36 container mx-auto w-full">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto w-full">
         <h1 className="text-5xl col-span-full text-center p-6">
           Here are some of my projects!
         </h1>

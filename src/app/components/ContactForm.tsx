@@ -71,7 +71,10 @@ function ContactForm() {
   }
 
   return (
-    <section className="min-h-screen container mx-auto px-6 snap flex flex-col items-center justify-center w-full">
+    <section
+      className="min-h-screen container mx-auto px-6 snap flex flex-col items-center justify-center w-full"
+      id="contact"
+    >
       <h2 className="col-span-full text-center text-6xl p-6">
         <FadeOnScroll>{`Let's get in touch`}</FadeOnScroll>
       </h2>
