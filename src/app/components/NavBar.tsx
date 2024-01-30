@@ -25,7 +25,9 @@ export default function NavBar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit text-2xl">Dominik Croci</p>
+          <Link href="/" className="font-bold text-inherit text-2xl">
+            Dominik Croci
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
