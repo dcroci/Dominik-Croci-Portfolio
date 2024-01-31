@@ -4,6 +4,7 @@ import FadeLeftOnScroll from './FadeLeftOnScroll';
 import FadeOnScroll from './FadeOnScroll';
 import FadeRightOnScroll from './FadeRightOnScroll';
 import Project from './Project';
+import { Button } from '@nextui-org/react';
 function ProjectsSection() {
   return (
     <section className="grid sm:grid-cols-1 md:grid-cols-2 min-h-screen gap-8 container mx-auto px-6 snap justify-center overflow-x-hidden">
@@ -38,25 +39,28 @@ function ProjectsSection() {
           hasTwoMockups={true}
         />
       </FadeRightOnScroll>
-      <div className="flex flex-col md:flex-row col-span-full text-center text-3xl items-center justify-center bg-blue-500 rounded w-2/4 mx-auto p-6">
-        <p className="col-span-full text-center pb-4 md:pb-0 md:pr-4">
-          <Link href={'/projects'}> See Full Portfolio</Link>
-        </p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-          />
-        </svg>
-      </div>
+
+      <Button
+        className="col-span-full text-center pb-4 md:pb-0 md:pr-4 text-2xl items-center justify-center rounded w-2/4 mx-auto bg-blue-500 text-white"
+        endContent={
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        }
+      >
+        <Link href={'/projects'}> See Full Portfolio</Link>
+      </Button>
     </section>
   );
 }

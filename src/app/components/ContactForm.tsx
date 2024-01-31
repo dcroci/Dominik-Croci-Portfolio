@@ -114,7 +114,7 @@ function ContactForm() {
           isRequired
         />
         <Button
-          className="flex mx-auto text-3xl bg-blue-500 text-white rounded p-6 mt-6 items-center justify-center gap-4 hover:bg-blue-600 hover:-translate-y-1"
+          className="col-span-full text-center pb-4 md:pb-0 md:pr-4 text-2xl items-center justify-center rounded w-full mx-auto bg-blue-500 text-white"
           type="submit"
           spinner
           endContent={

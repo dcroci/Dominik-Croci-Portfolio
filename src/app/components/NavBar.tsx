@@ -54,7 +54,7 @@ export default function NavBar() {
         <NavbarItem>
           <Link
             color="foreground"
-            href="#contact"
+            href="/#contact"
             className="text-white text-xl"
           >
             Contact
