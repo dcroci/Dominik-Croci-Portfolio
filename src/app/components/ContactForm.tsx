@@ -2,14 +2,14 @@
 import { useState } from 'react';
 import FadeOnScroll from './FadeOnScroll';
 import emailjs from '@emailjs/browser';
+import { Button, Input, Textarea } from '@nextui-org/react';
 
 function ContactForm() {
   const [nameValue, setNameValue] = useState('');
-  const [nameError, setNameError] = useState('');
+
   const [emailValue, setEmailValue] = useState('');
-  const [emailError, setEmailError] = useState('');
+
   const [messageValue, setMessageValue] = useState('');
-  const [messageError, setMessageError] = useState('');
 
   const fields = [
     {
@@ -41,10 +41,6 @@ function ContactForm() {
     const isNameValid = nameValue.trim() !== '';
     const isEmailValid = emailValue.trim() !== '';
     const isMessageValid = messageValue.trim() !== '';
-
-    setNameError(isNameValid ? '' : 'Name is invalid');
-    setEmailError(isEmailValid ? '' : 'Email is invalid');
-    setMessageError(isMessageValid ? '' : 'Message is invalid');
 
     if (isNameValid && isEmailValid && isMessageValid) {
       emailjs
@@ -79,75 +75,67 @@ function ContactForm() {
         <FadeOnScroll>{`Let's get in touch`}</FadeOnScroll>
       </h2>
       <form
-        className="flex flex-col w-full mx-auto text-2xl p-6 text-black max-w-3xl"
+        className="flex flex-col w-full mx-auto text-2xl p-6 text-black max-w-3xl gap-6"
         onSubmit={sendEmail}
       >
-        <label htmlFor="from_name" className="text-white">
-          Name:
-        </label>
-        <input
+        <Input
           type="text"
-          className="rounded text-xl indent-2 mb-4 p-2"
-          name="from_name"
+          label="Name"
+          placeholder="Enter your name"
           aria-label="Name"
+          name="from_name"
           value={nameValue}
           onChange={(e) => setNameValue(e.target.value)}
+          size="lg"
+          isRequired
         />
-        {nameError && (
-          <p className="text-white font-bold w-fit p-4 bg-red-700 rounded-md mt-2 mb-4">
-            {nameError}
-          </p>
-        )}
-        <label htmlFor="user_email" className="text-white">
-          Email:
-        </label>
-        <input
+
+        <Input
           type="email"
-          className="rounded text-xl indent-2 mb-4 p-2"
-          name="user_email"
+          label="Email"
+          placeholder="Enter your email"
           aria-label="Email"
+          name="user_email"
           value={emailValue}
           onChange={(e) => setEmailValue(e.target.value)}
+          size="lg"
+          isRequired
         />
-        {emailError && (
-          <p className="text-white font-bold w-fit p-4 bg-red-700 rounded-md mt-2 mb-4">
-            {emailError}
-          </p>
-        )}
-        <label htmlFor="message" className="text-white">
-          Message:
-        </label>
-        <textarea
+
+        <Textarea
           name="message"
-          cols={30}
-          rows={10}
-          className="rounded text-xl indent-2 p-2"
+          label="Message"
+          placeholder="Enter your description"
+          className="w-full text-xl"
           aria-label="Message"
-          value={messageValue}
           onChange={(e) => setMessageValue(e.target.value)}
-        ></textarea>
-        {messageError && (
-          <p className="text-white font-bold w-fit p-4 bg-red-700 rounded-md mt-2 mb-4">
-            {messageError}
-          </p>
-        )}
-        <button className="flex mx-auto text-3xl bg-blue-500 text-white rounded p-6 mt-6 items-center justify-center gap-4 hover:bg-blue-600 hover:-translate-y-1">
+          value={messageValue}
+          size="lg"
+          isRequired
+        />
+        <Button
+          className="flex mx-auto text-3xl bg-blue-500 text-white rounded p-6 mt-6 items-center justify-center gap-4 hover:bg-blue-600 hover:-translate-y-1"
+          type="submit"
+          spinner
+          endContent={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+              />
+            </svg>
+          }
+        >
           Send message
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-            />
-          </svg>
-        </button>
+        </Button>
       </form>
     </section>
   );
