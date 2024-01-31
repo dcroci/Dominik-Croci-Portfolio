@@ -5,12 +5,12 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from '@nextui-org/react';
+import Link from 'next/link';
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -46,6 +46,7 @@ export default function NavBar() {
             href="https://dominik-croci-blog.netlify.app/"
             aria-current="page"
             className="text-white text-xl"
+            target="_blank"
           >
             Blog
           </Link>
@@ -77,7 +78,6 @@ export default function NavBar() {
                   ? 'https://github.com/dcroci'
                   : 'https://www.linkedin.com/in/dominikrcroci/'
               }`}
-              size="lg"
             >
               {item}
             </Link>

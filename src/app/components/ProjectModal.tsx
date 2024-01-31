@@ -21,7 +21,10 @@ function ProjectModal({
           : 'hidden'
       }
     >
-      <ToggleProjectModalButton setShowModal={setShowModal} />
+      <ToggleProjectModalButton
+        setShowModal={setShowModal}
+        showModal={showModal}
+      />
       <h3 className="text-4xl col-span-2 mx-auto pb-6">{title}</h3>
       <p className="bg-blue-500 col-start-2 mr-auto w-fit py-1 px-4 rounded hover:bg-blue-600 flex items-center justify-center  ">
         Description
