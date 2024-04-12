@@ -94,7 +94,7 @@ function TechStackSection() {
               <StackIcon
                 imgURL="node-icon.png"
                 stackName="Node JS"
-                stackDesc="An open-source CSS framework directed at responsive, mobile-first front-end web development."
+                stackDesc="Node.js is an open-source, JavaScript runtime environment used to execute JavaScript code server-side, efficiently handling asynchronous operations and I/O-intensive tasks."
               />
               <StackIcon
                 imgURL="express-icon.png"
