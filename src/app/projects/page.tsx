@@ -9,6 +9,19 @@ function Page() {
           Here are some of my projects!
         </h1>
         <Project
+          title="DevTalk"
+          desc="Dive into coding with DevTalk, where every line of code connects you to a world of resources, expert insights, and a vibrant developer community
+
+          "
+          imgURL="dev-talk.png"
+          siteLink={'https://www.devtalk.tech'}
+          mockup1="mockups/dt-mockup.png"
+          mockup2="mockups/dt-tablet.png"
+          techs="React, NextJS, TypeScript Tailwind CSS, Prisma, Supabase"
+          gitLink="https://github.com/dcroci/devtalk"
+          hasTwoMockups={true}
+        />
+        <Project
           title="Personal Blog"
           desc="A full-stack web application where I post articles about exciting tech, my goals and achievements, and other code-related ideas"
           imgURL="blog.png"
@@ -44,19 +57,7 @@ function Page() {
           gitLink="https://github.com/dcroci/react-country-info"
           hasTwoMockups={true}
         />
-        <Project
-          title="Dev Talk"
-          desc="A dynamic single-page application where developers connect, share, and engage in spaces dedicated to various programming languages "
-          imgURL="dev-talk.png"
-          siteLink={'https://devtalk.tech/'}
-          mockup1="mockups/dt-mockup.png"
-          mockup2="mockups/dt-tablet.png"
-          techs={
-            'React, JSX, JavaScript, React Router, NodeJS, Express, SocketIO, Material UI, Firebase'
-          }
-          gitLink={'https://github.com/dcroci/devtalk-chatapp'}
-          hasTwoMockups={true}
-        />
+
         <Project
           title="Film Finder"
           desc="Search movies, find detailed information, and add movies to your Watch List with this React web app"

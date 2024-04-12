@@ -13,6 +13,21 @@ function ProjectsSection() {
       </h2>
       <FadeLeftOnScroll>
         <Project
+          title="DevTalk"
+          desc="Dive into coding with DevTalk, where every line of code connects you to a world of resources, expert insights, and a vibrant developer community
+
+          "
+          imgURL="dev-talk.png"
+          siteLink={'https://www.devtalk.tech'}
+          mockup1="mockups/dt-mockup.png"
+          mockup2="mockups/dt-tablet.png"
+          techs="React, NextJS, TypeScript Tailwind CSS, Prisma, Supabase"
+          gitLink="https://github.com/dcroci/devtalk"
+          hasTwoMockups={true}
+        />
+      </FadeLeftOnScroll>
+      <FadeRightOnScroll>
+        <Project
           title="Personal Blog"
           desc="A full-stack web application where I post articles about exciting tech, my goals and achievements, and other code-related ideas"
           imgURL="blog.png"
@@ -23,19 +38,6 @@ function ProjectsSection() {
             'React, JSX, React Router, NodeJS, Express, Mongoose, MongoDB, Tailwind CSS'
           }
           gitLink="https://github.com/dcroci/blog-mern"
-          hasTwoMockups={true}
-        />
-      </FadeLeftOnScroll>
-      <FadeRightOnScroll>
-        <Project
-          title="Game Guesser"
-          desc="An interactive single-page web game where players engage in guessing video game titles and imagery, testing their knowledge of various video games in a fun and engaging way"
-          imgURL="game-guesser.png"
-          siteLink={'https://gameguesser.netlify.app/'}
-          mockup1="mockups/gg-mockup.png"
-          mockup2="mockups/gg-tablet.png"
-          techs="React, JSX, RAWG API"
-          gitLink="https://github.com/dcroci/react-game-guesser"
           hasTwoMockups={true}
         />
       </FadeRightOnScroll>
