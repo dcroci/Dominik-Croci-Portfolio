@@ -7,7 +7,7 @@ import Link from '../../node_modules/next/link';
 import './globals.css';
 import './fonts.css';
 import { Providers } from './providers';
-import NavBar from './components/NavBar';
+import NavBar from '@/components/NavBar';
 // import { usePathname } from 'next/navigation';WILL NEED THIS LATER TO SHOW ACTIVE PAGE
 
 //imports end

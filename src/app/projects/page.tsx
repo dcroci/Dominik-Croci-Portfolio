@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Navbar from '../components/NavBar';
-import Project from '../components/Project';
+import Navbar from '@/components/NavBar';
+import Project from '@/components/Project';
 function Page() {
   return (
     <section className="flex flex-col sm:flex-col items-center md:flex-row-reverse lg:flex-col xl:flex-col gap-8 container mx-auto">
