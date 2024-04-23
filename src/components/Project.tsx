@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import ProjectModal from './ProjectModal';
 import ToggleProjectModalButton from './ToggleProjectModalButton';
-import FadeOnScroll from './FadeOnScroll';
+import Animate from './Animate';
 
 function Project({
   title,
@@ -20,7 +20,7 @@ function Project({
   return (
     <>
       {showModal ? (
-        <FadeOnScroll>
+        <Animate>
           <ProjectModal
             title={title}
             desc={desc}
@@ -33,7 +33,7 @@ function Project({
             techs={techs}
             hasTwoMockups={hasTwoMockups}
           />
-        </FadeOnScroll>
+        </Animate>
       ) : (
         <div className="flex flex-col items-center p-6 max-w-lg mx-auto w-full container">
           <div className="relative w-full">

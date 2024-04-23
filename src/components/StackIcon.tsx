@@ -5,22 +5,24 @@ function StackIcon({
   imgURL,
   stackName,
   stackDesc,
+  margin,
 }: {
   imgURL: string;
   stackName: string;
   stackDesc: string;
+  margin: string;
 }) {
   return (
     <div>
       <Popover placement="top" showArrow backdrop="opaque">
         <PopoverTrigger>
-          <figure className="flex flex-col items-center gap-2 w-fit">
+          <figure className="flex flex-col gap-2 w-fit">
             <Image
               src={`/assets/${imgURL}`}
               alt={imgURL}
               width={'70'}
               height={'70'}
-              className="mx-auto cursor-pointer hover:-translate-y-1 hover:scroll-smooth hover:ease-in-out  "
+              className={`${margin} cursor-pointer hover:-translate-y-1 hover:scroll-smooth hover:ease-in-out`}
             />
             <figcaption className="text-lg font-medium text-center">
               {stackName}

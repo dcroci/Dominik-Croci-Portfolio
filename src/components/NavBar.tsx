@@ -18,7 +18,11 @@ export default function NavBar() {
   const menuItems = ['Projects', 'Blog', 'Contact', 'GitHub', 'LinkedIn'];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-transparent">
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      className="bg-transparent"
+      isBlurred={false}
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}

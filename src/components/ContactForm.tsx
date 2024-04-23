@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
-import FadeOnScroll from './FadeOnScroll';
+
 import emailjs from '@emailjs/browser';
 import { Button, Input, Textarea } from '@nextui-org/react';
+import Animate from './Animate';
 
 function ContactForm() {
   const [nameValue, setNameValue] = useState('');
@@ -72,7 +73,7 @@ function ContactForm() {
       id="contact"
     >
       <h2 className="col-span-full text-center text-6xl p-6">
-        <FadeOnScroll>{`Let's get in touch`}</FadeOnScroll>
+        <Animate>{`Let's get in touch`}</Animate>
       </h2>
       <form
         className="flex flex-col w-full mx-auto text-2xl p-6 text-black max-w-3xl gap-6"
