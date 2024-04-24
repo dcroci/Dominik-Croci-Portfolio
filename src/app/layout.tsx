@@ -2,8 +2,8 @@
 // 'use client'; WILL NEED THIS LATER TO SHOW ACTIVE PAGE
 //imports start
 import type { Metadata } from 'next';
-
 import Link from '../../node_modules/next/link';
+import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 import './fonts.css';
 import { Providers } from './providers';
@@ -28,13 +28,10 @@ export default function RootLayout({
 }) {
   // const pathname = usePathname(); WILL NEED THIS LATER TO SHOW ACTIVE PAGE
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className={`${GeistSans.className} overflow-x-hidden`}>
       <body className="text-white w-full">
-        <div className="gradient mx-auto w-full">
-          <Providers>
-            <NavBar />
-            {children}
-          </Providers>
+        <div className="gradient mx-auto w-full pt-12 px-6">
+          <Providers>{children}</Providers>
         </div>
       </body>
     </html>
