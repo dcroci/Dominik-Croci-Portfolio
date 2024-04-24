@@ -16,17 +16,14 @@ function StackIcon({
     <div>
       <Popover placement="top" showArrow backdrop="opaque">
         <PopoverTrigger>
-          <figure className="flex flex-col gap-2 w-fit">
+          <figure className="flex flex-col justify-between gap-2 w-fit">
             <Image
               src={`/assets/${imgURL}`}
               alt={imgURL}
-              width={'70'}
-              height={'70'}
-              className={`${margin} cursor-pointer hover:-translate-y-1 hover:scroll-smooth hover:ease-in-out`}
+              width={'50'}
+              height={'50'}
+              className={`mx-auto cursor-pointer hover:-translate-y-1 hover:scroll-smooth hover:ease-in-out transition-all duration-300`}
             />
-            <figcaption className="text-lg font-medium text-center">
-              {stackName}
-            </figcaption>
           </figure>
         </PopoverTrigger>
 
