@@ -15,49 +15,6 @@
   background-size: 180% 180%;
   animation: gradient-animation 6s ease infinite;
 }
-.snap-container {
-  scroll-snap-type: y mandatory;
-}
-.snap {
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
-.scroll-bar::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
-}
-
-.scroll-bar::-webkit-scrollbar-track {
-  background-color: #f0f0f0; /* Color of the track of the scrollbar */
-}
-
-.scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #56067a; /* Color of the thumb (the scrolling part) of the scrollbar */
-  border-radius: 6px; /* Making the thumb corners round */
-}
-
-/* Styles for Firefox */
-.scroll-bar {
-  scrollbar-width: thin; /* Width of the scrollbar */
-  scrollbar-color: #56067a #f0f0f0; /* thumb and track color */
-}
-.scroll-bar:nth-of-type(1) {
-  direction: rtl;
-}
-@media (max-width: 768px) {
-  .snap {
-    scroll-snap-align: none;
-    scroll-snap-stop: normal;
-  }
-  html {
-    scroll-snap-type: none;
-  }
-}
-@media (max-width: 495px) {
-  .intro {
-    margin-top: 15%;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -66,4 +23,136 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+* {
+  transition: all;
+  scroll-behavior: smooth;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
