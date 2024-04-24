@@ -2,12 +2,12 @@
 // 'use client'; WILL NEED THIS LATER TO SHOW ACTIVE PAGE
 //imports start
 import type { Metadata } from 'next';
-import Link from '../../node_modules/next/link';
+
 import { GeistSans } from 'geist/font/sans';
 import './globals.css';
-import './fonts.css';
+
 import { Providers } from './providers';
-import NavBar from '@/components/NavBar';
+
 // import { usePathname } from 'next/navigation';WILL NEED THIS LATER TO SHOW ACTIVE PAGE
 
 //imports end
