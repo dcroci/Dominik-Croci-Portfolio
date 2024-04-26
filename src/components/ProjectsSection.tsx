@@ -59,11 +59,11 @@ function ProjectsSection() {
             </p>
             <p className="font-medium text-white mt-4 cursor-pointer">
               Want to learn more?{' '}
-              <span className="underline">
+              {/* <span className="underline">
                 <Link href="/projects/devtalk">
                   See my process building DevTalk.
                 </Link>
-              </span>
+              </span> */}
             </p>
           </section>
           <ul className="flex items-center gap-4 w-full">
